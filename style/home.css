@@ -39,6 +39,19 @@ nav ul{
     flex-direction: row;
     list-style-type: none;
     width: 70vw;
+
+    
+}
+@media screen and (max-width:550px){
+    nav ul{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+        
+    }
     
 }
 nav ul a{
