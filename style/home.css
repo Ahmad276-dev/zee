@@ -46,11 +46,22 @@ nav ul{
     nav ul{
         
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        
-        
+    }
+    #cont{
+        width: clamp(200px,90vw,550px);
+        height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: 1px solid black;
+        background-image: url(../images/img10.jpg);
+        background-repeat: no-repeat;
+        background-size: clamp(200px,90vw,550px) 80vh;
     }
     
 }
