@@ -42,6 +42,22 @@ nav ul{
 
     
 }
+p{
+    color: chocolate;
+    font-family: cursive;
+    text-transform: capitalize;
+    position: relative;
+    left: 40%;
+    top: -1em;
+    letter-spacing: 4px;
+    animation-name: put;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes put{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(20px);}
+}
 @media screen and (max-width:550px){
     nav ul{
         
@@ -62,6 +78,22 @@ nav ul{
         background-image: url(../images/img10.jpg);
         background-repeat: no-repeat;
         background-size: clamp(200px,90vw,550px) 80vh;
+    }
+    p{
+        color: rgb(235, 149, 88);
+        font-family: cursive;
+        text-transform: capitalize;
+        position: relative;
+        left: 10%;
+        top: -1em;
+        letter-spacing: 4px;
+        animation-name: put;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes put{
+        0%{transform: translateY(0);}
+        100%{transform: translateY(20px);}
     }
     
 }
@@ -118,19 +150,3 @@ h2 a{
     color: cornsilk;
 }
 
-p{
-    color: chocolate;
-    font-family: cursive;
-    text-transform: capitalize;
-    position: relative;
-    left: 40%;
-    top: -1em;
-    letter-spacing: 4px;
-    animation-name: put;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-}
-@keyframes put{
-    0%{transform: translateY(0);}
-    100%{transform: translateY(20px);}
-}
