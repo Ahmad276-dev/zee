@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient(150deg,rgba(231, 209, 127, 0.555),rgb(121, 106, 77));
+    background-image: linear-gradient(90deg,rgba(228, 213, 159, 0.555),rgb(199, 172, 118));
     
 
 }
@@ -63,8 +63,8 @@ p{
         
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        width: 100%;
         justify-content: space-around;
     }
     #cont{
