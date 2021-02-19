@@ -8,11 +8,11 @@ nav{
 }
 nav ul{
     width: 50%;
-    margin-left: auto;
+    
     margin-right: auto;
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
     
     
 }
@@ -161,11 +161,18 @@ img{
 img:hover{
     transform: translateY(20px);
 }
-@media screen and (max-width:550px){
+
+
+
+
+@media screen and (max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
     #cont{
         border: 0.5px blanchedalmond solid;
-        width: 550px;
-        height: 400px;
+        width: 100%;
+        height: 50vh;
         margin-left: 0;
         margin-right: auto;
         background-color: rgb(156, 152, 146);
@@ -177,7 +184,10 @@ img:hover{
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         animation-duration: 15s;
+        overflow: scroll;
     }
+        
+
     
     @keyframes main{
         0%{background-image: url(../images/girl2.jpg);}
@@ -185,8 +195,13 @@ img:hover{
         75%{background-image: url(../images/girl.jpg);}
         100%{background-image: url(../images/girl4.jpg);}
     }
+    img{
+        width: clamp(100px,10%,250px);
+        height: 200px;
+        cursor: pointer;
+    }
     nav{
-        width: 100vw;
+        width: 100%;
         border: 0.5px black solid;
         background-color: black;
     }
@@ -197,9 +212,87 @@ img:hover{
         flex-wrap: wrap;
         list-style-type: none;
         justify-content: space-around;
-        margin-left: 1vw;
-        
+        flex-shrink: 3;
+       
         
     }
-
+    nav ul a{
+        margin-right: 3px;
+        margin-left: 5px;
+    }
+    #sales{
+        width: 100%;
+    }
+    h1.hen{
+        border: 1px solid black;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        padding-left: 1em;
+        background-color: rgb(131, 131, 24);
+        text-align: center;
+        width: 100%
+    }
+    .henna{
+        width:100% ;
+        
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        justify-content: space-around;
+    }
+    h1.brac{
+        border: 1px solid black;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        padding-left: 1em;
+        background-color: rgb(9, 73, 88);
+        text-align: center;
+        width: 100%
+    
+    }
+    .bracelet{
+        width: 40%;
+        
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        justify-content: space-around;
+    
+    }
+    h1.glo{
+        border: 1px solid black;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        padding-left: 1em;
+        background-color: rgb(210, 238, 54);
+        text-align: center;
+        width: 100%;
+    }
+    .gloves{
+        width: 40%;
+        
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        justify-content: space-around;
+    }
+    .top{
+        font-family: fantasy;
+        text-transform: uppercase;
+        font-size: 2rem;
+        position: absolute;
+        left:clamp(100px,20vw,120px) ;
+        padding-right: 20%;
+    }
+    .bot{
+        font-family: Arial, Helvetica, sans-serif;
+    
+        font-size: 0.9em;
+        position: absolute;
+        top: clamp(30%,10%,30vh);
+        left: clamp(100px,30vw,150px);
+        padding-right: 20%;
+        margin-top: 15px;
+    }
+    
 }
