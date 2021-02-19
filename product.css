@@ -296,3 +296,15 @@ img:hover{
     }
     
 }
+
+@media screen and (max-width:400px){
+    .top{
+        font-family: fantasy;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        position: absolute;
+        left:clamp(60px,20vw,120px) ;
+        padding-right: 20%;
+    }
+    
+ }
