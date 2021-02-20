@@ -4,8 +4,14 @@
 body{
     background-image: linear-gradient(90deg,rgba(228, 213, 159, 0.555),rgb(199, 172, 118));
     
-
 }
+
+@mediascreen and (min-width:480px){
+    h1.men{
+        display: none;
+    }
+}
+
 #cont{
     width: clamp(700px,90vw,1500px);
     height: 80vh;
@@ -58,45 +64,7 @@ p{
     0%{transform: translateY(0);}
     100%{transform: translateY(20px);}
 }
-@media screen and (max-width:550px){
-    nav ul{
-        
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-    }
-    #cont{
-        width: clamp(200px,90vw,550px);
-        height: 80vh;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        border: 1px solid black;
-        background-image: url(../images/img10.jpg);
-        background-repeat: no-repeat;
-        background-size: clamp(200px,90vw,550px) 80vh;
-    }
-    p{
-        color: rgb(235, 149, 88);
-        font-family: cursive;
-        text-transform: capitalize;
-        position: relative;
-        left: 10%;
-        top: -1em;
-        letter-spacing: 4px;
-        animation-name: put;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-    }
-    @keyframes put{
-        0%{transform: translateY(0);}
-        100%{transform: translateY(20px);}
-    }
-    
-}
+
 nav ul a{
     text-decoration: none;
     color: rgb(6, 47, 143);
@@ -113,7 +81,7 @@ nav ul a:hover{
 h1{
     width: 20vw;
     padding-left: clamp(1em,2vw,5em);
-    
+
     font-size: 4vw;
     letter-spacing: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -130,7 +98,7 @@ h1{
 
 h2{
     width: max-content;
-    border: 2px dashed black;
+    border: 2px solid greenyellow;
     border-radius: 2em;
     background-color: rgb(165, 152, 14);
     padding: 7px;  
@@ -149,4 +117,106 @@ h2 a{
     text-decoration: none;
     color: cornsilk;
 }
+
+
+
+@media screen and (max-width:480px){
+    /*nav{
+        border: 0.5px solid black;
+        background-color: black;
+        width: 100%;
+    }*/
+    *{
+        box-sizing: border-box;
+    }
+    .disp{
+        color: cornsilk;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background-color: black;
+    }
+    
+    nav ul{
+        
+        display: none;
+        position: static;
+        
+        z-index: 1;
+        
+        
+
+    }
+    .disp:hover nav ul{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        box-shadow:  1px 3px 2px 3px black;
+        font-size: 1.1em;
+        padding: 3px;
+    }
+    #cont{
+        width: 100%;
+        height: 100vh;
+        
+        border: 1px solid black;
+        background-image: url(../images/img10.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .main{
+        width:89vw;
+        
+        position: absolute;
+        margin-left: 5%;
+        left: 0;
+        top: 25vh;
+        right: 0;
+    }
+    .main h1{
+        font-family: serif;
+        word-spacing: .3em;
+        font-size: 1.5em;
+        width: 100%;
+        word-wrap: break-word;
+        
+    }
+    h2{
+        width: max-content;
+        border: 2px solid rgba(198, 204, 120, 0.801);
+        border-radius: 2em;
+        background-color: rgb(165, 152, 14);
+        padding: 7px;  
+        position: relative;
+        left: 30px;
+        font-size: clamp(1em,2vw,3em);
+        margin-right: 2%;
+
+    }
+    p{
+        color: rgb(235, 149, 88);
+        font-family: cursive;
+        font-weight: 700;
+        text-transform: capitalize;
+        position: relative;
+        left: 10%;
+        top: -1em;
+        letter-spacing: 4px;
+        animation-name: put;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes put{
+        0%{transform: translateY(0);}
+        100%{transform: translateY(20px);}
+    }
+    
+}
+
+
 
